@@ -1,0 +1,24 @@
+import javax.swing.*;
+import java.awt.event.*;
+
+public class buttonexample {
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame(title: "buttone xample");
+        Jbutton button = new Jbutton(text: "Click Me");
+
+        //Menambahkan ActionListener Ke Jbutton
+        button.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                System.out.println(x:"button clicked");
+        }
+    });
+
+    button.setBounds(x:50, y:50, width:150, height:30);
+    frame.add(button);
+    frame.setSize(width:300, height:200);
+    frame.setLayout(manager:null);
+    frame.setVisible(b:true);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+}
