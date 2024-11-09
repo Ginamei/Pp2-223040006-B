@@ -1,0 +1,16 @@
+package dao;
+
+import java.sql.Connection;
+
+import db.MySqlConnection;
+import model.JenisMember;
+
+public class JenisMemberDao {
+    public int insert(JenisMember jenisMember)
+    {
+        int result = -1;
+        try(Connection connection = MySqlConnection.getInstance().getConnection();) {
+            
+        }
+    }
+}
